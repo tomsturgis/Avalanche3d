@@ -11,7 +11,7 @@ public class IcicleBehavior : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 	}
 
-	void onCollisionEnter (Collision col)
+	void OnCollisionEnter (Collision col)
 	{
 		Debug.Log("hello");
 	}
