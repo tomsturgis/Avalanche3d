@@ -8,6 +8,11 @@ public class ManBehaviourScript : MonoBehaviour {
 	void Start () {
         rb = GetComponent<Rigidbody>();
 	}
+
+	public void ReactToHit()
+	{
+		Debug.Log("im hit:");
+	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
