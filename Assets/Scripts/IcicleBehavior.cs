@@ -13,11 +13,10 @@ public class IcicleBehavior : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
 	{
-		if (col.gameObject)
-		{
+		GameObject objHit = col.gameObject;
+		if (col.gameObject.name == "Man"){
 			Destroy(col.gameObject);
 		}
-		Debug.Log("hello");
 		Destroy(this.gameObject);
 	}
 		
