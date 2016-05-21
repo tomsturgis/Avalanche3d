@@ -10,6 +10,11 @@ public class IcicleBehavior : MonoBehaviour {
 	public void Start () {
 		rb = GetComponent<Rigidbody>();
 	}
+
+	void OnCollisionEnter (Collision col)
+	{
+		Debug.Log("hello");
+	}
 		
 	// Update is called once per frame
 	void FixedUpdate () {
