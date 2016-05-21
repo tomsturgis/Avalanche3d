@@ -13,7 +13,12 @@ public class IcicleBehavior : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
 	{
+		if (col.gameObject)
+		{
+			Destroy(col.gameObject);
+		}
 		Debug.Log("hello");
+		Destroy(this.gameObject);
 	}
 		
 	// Update is called once per frame
